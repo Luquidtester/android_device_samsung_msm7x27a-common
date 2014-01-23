@@ -43,11 +43,11 @@ TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a5 -mfpu=neon -mfloat-abi=softfp
 SKIP_SET_METADATA := true
 
 ## FM Radio
-BOARD_HAVE_QCOM_FM := false
+BOARD_HAVE_QCOM_FM := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_FM_ENABLED
 
 ## Memory
-TARGET_USES_ION := true
+TARGET_USES_ION := false
 BOARD_NEEDS_MEMORYHEAPPMEM := true
 BOARD_USE_MHEAP_SCREENSHOT := true
 
